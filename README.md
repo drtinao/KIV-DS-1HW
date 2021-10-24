@@ -17,7 +17,7 @@ Pokud spouštěný uzel nemá nejvyšší IP v síti, pak je uzel prohlášen za
 
 Master uzel po spuštění a získání dat o stavu strojů v síti vypočítá potřebný počet červených a zelených uzlů – funkce „master_count_colors“. Informace získané výpočtem (= odpovídající barvy) jsou poté zasílány jakožto odpovědi jednotlivým uzlům.
 
-Slave uzly pravidelně zasílají masteru zprávy, ve který sdělují svou aktuální barvu. Master odpovídá barvou, kterou by uzly měly mít nastaveny. Zde je zřejmé, že barva se může v průběhu běhu programu měnit, jelikož některý z uzlů může přestat komunikovat atp. V takovém případě by byl nutný přepočet, aby byly zachovány požadované poměry barev v síti.
+Slave uzly pravidelně zasílají masteru zprávy, ve kterých sdělují svou aktuální barvu. Master odpovídá barvou, kterou by uzly měly mít nastaveny. Zde je zřejmé, že barva se může v průběhu běhu programu měnit, jelikož některý z uzlů může přestat komunikovat atp. V takovém případě by byl nutný přepočet, aby byly zachovány požadované poměry barev v síti.
 
 Kontakt masteru slave uzlem probíhá pravidelně každých 15s, interval je možno změnit – viz sekce „Konstanty umožňující konfiguraci programu“.
 
